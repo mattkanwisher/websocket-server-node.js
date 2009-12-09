@@ -6,7 +6,6 @@ exports.handleData = function(connection, data) {
     var _data = eval('(' + data + ')');
 
     if (_data.charCode !== undefined) {
-        sys.puts('GOT SOMETHING!');
         _process.write(_data.charCode);
         return;
     }
